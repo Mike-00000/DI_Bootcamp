@@ -15,7 +15,7 @@
 
 nav ul li {
     display: inline;
-    padding: 5px;
+    /* padding: 5px; */
     color: white;
     padding: 0px 1vw 0px 1vw;
 }
@@ -49,4 +49,21 @@ h1 {
 
 p {
     margin-right: 50vw;
+}
+#vv{
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 30px;
+    top: 10px
+}
+
+#container{
+    position: relative;
+}
+
+ul{
+    position: absolute;
+    right: 50px;
+    top: 15px;
 }
