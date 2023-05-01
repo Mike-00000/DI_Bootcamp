@@ -1,0 +1,42 @@
+span {
+  background-color: yellow;
+}
+#catlist {
+  margin-left: 20px;
+}
+
+img {
+  width: 400px;
+  border: 5px solid orangered;
+}
+.cat {
+  text-align: center;
+}
+
+.the_lion {
+  text-align: center;
+}
+
+#media {
+  text-align: center;
+}
+
+p {
+  width: auto;
+  max-width: 1200px;
+  border: 2px solid red;
+  text-align: center;
+}
+
+table {
+  width: auto;
+  align-items: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}

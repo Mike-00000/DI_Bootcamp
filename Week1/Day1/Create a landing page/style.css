@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 35px;
+  background-color: rgb(224, 224, 224);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav ul li:first-child {
+  margin-left: 150px;
+  margin-top: 3px;
+  padding: 5px;
+}
+
+nav ul li:last-child {
+  margin-right: 150px;
+  margin-top: 3px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(73, 116, 255);
+  color: white;
+}
+
+nav ul li a:first-child {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+}
+
+nav ul li:last-child a {
+  background-color: rgb(73, 116, 255);
+  color: white;
+}
+
+body {
+  background-image: url("pexels-kien-virak.jpg");
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.center {
+  margin: 50px;
+  text-align: center;
+  font-size: x-large;
+}
+.build {
+  color: white;
+  padding: 20px;
+}
+
+input {
+  height: 30px;
+}
+
+#email {
+  width: 300px;
+}
+
+#signup {
+  background-color: rgb(73, 116, 255);
+  border: 2px solid rgb(73, 116, 255);
+  border-radius: 5px;
+  color: white;
+  padding: 0px 25px;
+}
+
+.foot {
+  background-color: rgb(224, 224, 224);
+}
+
+.icons {
+  display: flex;
+  height: 250px;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.icon1 {
+  margin: 20px 20px 10px 20px;
+  padding: 5px;
+}
+
+.icon2 {
+  margin: 20px 20px 10px 20px;
+  padding: 5px;
+}
+
+.icon3 {
+  margin: 20px 20px 10px 20px;
+  padding: 5px;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+}
