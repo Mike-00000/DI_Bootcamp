@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav {
+    border: 10px solid black
+} */
+
+.container {
+  list-style-type: none;
+  width: 900px;
+  position: relative;
+  /* display: inline; */
+  /* background-color: black; */
+  height: 80px;
+}
+/* nav img {
+  display: inline;
+  position: absolute;
+} */
+
+img {
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+nav ul li {
+  float: right;
+  display: inline;
+  margin-right: 50px;
+  margin-top: -50px;
+  font-size: small;
+  font-weight: bold;
+}
+
+nav > * {
+  display: inline-block;
+  border: 2px solid black;
+  background-color: rgb(230, 230, 230);
+}

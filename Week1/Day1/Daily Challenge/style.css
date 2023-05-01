@@ -45,6 +45,7 @@ h1 {
 
 .main_content {
     margin-top: 19vw;
+    margin-left: 10vw;
 }
 
 p {
@@ -66,4 +67,56 @@ ul{
     position: absolute;
     right: 50px;
     top: 15px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	h1 {
+	font-size: 35px;
+	}
+
+    .container {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        background-color: lightgreen;
+        color: black;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        background-color: red;
+        color: white;
+    }
+
+    .main_content {
+        position: relative;
+        margin-left: 3vw;
+    }
+
+    h1 {position: absolute;}
+    p {position: absolute; left: 200px; margin-right: 25vw;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        background-color: black;
+        color: white;
+    }
 }
