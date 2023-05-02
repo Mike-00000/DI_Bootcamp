@@ -1,0 +1,47 @@
+.greenbox {
+  background-color: #bbf8bb;
+  border: 1px solid;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectiongrid {
+  display: flex;
+  height: 320px;
+  border: 2px solid black;
+  justify-content: space-between;
+  /* grid-template-columns: 100px 50px 130px; */
+  /* grid-template-columns: 1fr repeat(100, 2fr); */
+  /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+#left {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: left;
+}
+
+#right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: right;
+}
+
+#center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 65vw;
+}
+
+/* .green_g {
+    grid-column: 3;
+    grid-row: 4;
+    /* start at column 1 and take the same of 2 columns */

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 2px solid rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  padding: 1px 1px 1px;
+  color: #444;
+}
+
+.wrapper {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #e2e2e2;
+  width: 90%;
+  margin: 20px 20px 40px 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  width: fit-content;
+  height: fit-content;
+}
+
+.orange {
+  /* grid-column: col / span 1; 
+    grid-row: row / span 1; */
+  background-color: orangered;
+}
+.yellow {
+  /* grid-column: col 2 / span 1; 
+    grid-row: row / span 1;  */
+  background-color: yellow;
+}
+.brown {
+  /* grid-column: col 3 / span 1; 
+    grid-row: row / span 1;  */
+  background-color: brown;
+}
+
+.wrapper2 {
+  border: 2px solid black;
+  background-color: #e2e2e2;
+  width: 90%;
+  margin: 20px 20px 40px 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  width: fit-content;
+  height: fit-content;
+}
+
+.gray1 {
+  /* grid-column: col / span 1; 
+      grid-row: row / span 1; */
+  background-color: rgb(219, 219, 219);
+}
+.gray2 {
+  /* grid-column: col 2 / span 1; 
+      grid-row: row / span 1;  */
+  background-color: rgb(155, 155, 155);
+}
+.gray3 {
+  /* grid-column: col 3 / span 1; 
+      grid-row: row / span 1;  */
+  background-color: rgb(117, 117, 117);
+}
+.gray4 {
+  /* grid-column: col 3 / span 1; 
+      grid-row: row / span 1;  */
+  background-color: rgb(48, 48, 48);
+}
+
+.wrapper3 {
+  border: 2px solid black;
+  background-color: #e2e2e2;
+  width: 90%;
+  margin: 20px 20px 40px 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  width: fit-content;
+  height: fit-content;
+}
+
+.white {
+  /* grid-column: col / span 1; 
+        grid-row: row / span 1; */
+  background-color: rgb(255, 255, 255);
+}
+.pink {
+  /* grid-column: col 2 / span 1; 
+        grid-row: row / span 1;  */
+  background-color: rgb(235, 141, 169);
+}
+.fuschia {
+  /* grid-column: col 3 / span 1; 
+        grid-row: row / span 1;  */
+  background-color: rgb(173, 18, 78);
+}
