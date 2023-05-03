@@ -10,34 +10,43 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <style>       
+        ul{
+          list-style-type: none;
+        }
+      </style>
   </head>
+
   <body class="boody" style="border: 2px solid black">
+
     <div class="container">
+
       <div class="row">
         <div
-          class="col-3 sidebar bg-light">
-          <div class="row-6 favorites">
-            <h3>Some Favorites</h3>
-            <ul>
+          class="col-3 sidebar">
+          <div class="row-6 favorites bg-light p-3">
+            <h3 style="color: rgb(207, 207, 207);">Some Favorites</h3>
+            <ul style="color: rgb(134, 172, 255);">
               <li>Celery Root</li>
               <li>Spaghetti Squash</li>
               <li>Killer Mushrooms</li>
             </ul>
-          </div>
-          <div class="row-6 form">
             <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder=""
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <span class="input-group-text" id="basic-addon2"
-                >Search Recipes</span
-              >
-            </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                      Search Recipes
+                    </button>
+                  </div>
+              </div>
           </div>
+          
         </div>
         <div
           class="col-9 maincontent bg-white"
@@ -72,8 +81,8 @@
           <div class="row-3 tableau">
             <br />
             <h2>Some diseases</h2>
-            <table class="table">
-              <thead>
+            <table class="table table-striped table-bordered">
+            <thead>
                 <tr>
                   <th scope="col">Veggie</th>
                   <th scope="col">Disease</th>
@@ -93,9 +102,9 @@
           </div>
 
           <div class="row-3 photos">
-            <img src="beets.jpg" class="rounded float-start" alt="beets" height="80px" width="100px">
-            <img src="Carrots.jpg" class="rounded float" alt="carrots" height="80px" width="100px">
-            <img src="purple-vegetables.jpg" class="rounded float-end" alt="purple vegetables" height="80px" width="100px">
+            <span class="border-start m-2"><img src="beets.jpg" alt="beets" height="80px" width="100px" style="border: 2px solid rgb(211, 211, 211)"></span>
+            <span class="border-bottom m-2"><img src="Carrots.jpg" alt="carrots" height="80px" width="100px" style="border: 2px solid rgb(211, 211, 211)"></span>
+            <span class="border-end m-2"><img src="purple-vegetables.jpg" alt="purple vegetables" height="80px" width="100px" style="border: 2px solid rgb(211, 211, 211)"></span>
         </div>
 
           <div class="row-3 info">
@@ -107,14 +116,14 @@
               nihil error iusto ex explicabo, recusandae, sequi officiis
               nesciunt doloremque reiciendis deserunt. Unde!
             </p>
-            <br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Distinctio obcaecati laboriosam debitis libero reprehenderit
             placeat, architecto, eveniet magni accusamus ex accusantium corporis
             illo. Sunt, tempora! Dignissimos deserunt maxime explicabo illo.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
             exercitationem fuga delectus distinctio harum nesciunt praesentium
             velit consequuntur ratione, obcaecati quae soluta error sunt
-            asperiores illum aliquam dicta dignissimos nihil.
+            asperiores illum aliquam dicta dignissimos nihil.</p>
           </div>
         </div>
       </div>
