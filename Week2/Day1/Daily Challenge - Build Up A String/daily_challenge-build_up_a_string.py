@@ -12,13 +12,16 @@ else:
     print(f"Last character: {lastChar}")
 
 
-i = 0
-
-while(i < len(sentence)):
-    print("The Character at %d Index Position = %c" %(i, sentence[i]))
-    i = i + 1
-
+for i in range(len(sentence)):
+    print(f"The character at {i} index position: {sentence[i]}")
 print(sentence)
+
+
+new_sentence = ""
+for letter in sentence:
+    new_sentence = new_sentence + letter
+    print(new_sentence)
+
 
 strlist = list(sentence)
 print(strlist)
@@ -27,8 +30,13 @@ print(strlist)
 shuffled_str = ''.join(strlist)
 
 print(shuffled_str)
-# shuffled_sentence = random.shuffle(random.sample(sentence))
 
-# sentence_to_print = shuffled_sentence.join
 
-# print(sentence_to_print)
+
+
+
+# # shuffled_sentence = random.shuffle(random.sample(sentence))
+
+# # sentence_to_print = shuffled_sentence.join
+
+# # print(sentence_to_print)
