@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a todo</title>
+</head>
+<body>
+    <h1>Add a Todo</h1>
+
+    <form action="/todo" method="post">
+        {% csrf_token %}
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title">
+
+        <label for="details">Details</label>
+        <textarea id="details" name="details"></textarea>
+
+        <label for="deadline_date">Deadline Date</label>
+        <input type="date" id="deadline_date" name="deadline_date">
+
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            {% for category in categories %}
+                <option value="{{ category.id }}">{{ category.name }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="submit" value="Add Todo">
+    </form>
+</body>
+</html>
