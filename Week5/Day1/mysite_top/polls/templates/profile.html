@@ -7,13 +7,8 @@
     <title>Document</title>
   </head>
   <body>
-    {%if gender == 'M'%} Hello Mr.{{name}} {%elif gender == 'F'%} Hello
-    mrs.{{name}} {%endif%}
-    <br />
-    Hobbies: {%for hobby in hobbies%}
-    <ul>
-      <li>{{hobby}}</li>
-    </ul>
-    {%endfor%}
+    NAME: {{user.first_name}} {{user.last_name}}
+    <br>
+    EMAIL: {{email}}
   </body>
 </html>

@@ -7,16 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
+        {{search}}
+        <button type="submit"> search </button>
+    </form>
+    
+    <h1> POSTS </h1>
 
-    <h1> {{title}} <small> by {{author}} </small></h1>
-    <p>
-        {{content}}
-    </p>
-
-    {%for subscribers in subscribers_list%}
-        <br>{{subscribers}}
+    {% for post in post_list %}
+        <p>
+            {{post.title}}
+            <br>
+            {{post.content}}
+            <br>
+            {{post.author}}
+            <br>
+            {{post.date_created}}
+        </p>
     {%endfor%}
-
-    <br><small>{{time}}</small>
 </body>
 </html>
