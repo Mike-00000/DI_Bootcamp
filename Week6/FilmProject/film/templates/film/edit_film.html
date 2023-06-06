@@ -1,0 +1,13 @@
+{% extends 'partials/base.html' %}
+{% include 'partials/navbar.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Edit Film</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary mt-3" type="submit">Update Film</button>
+    </form>
+</div>
+{% endblock %}
