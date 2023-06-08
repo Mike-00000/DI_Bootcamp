@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Sharing - Create Album</title>
+</head>
+<body>
+    <h1>Create Album</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>

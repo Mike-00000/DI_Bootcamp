@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Sharing - Upload Image</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+        <label for="image_file">Image:</label>
+        <input type="file" name="image_file" id="image_file">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

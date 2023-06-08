@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Sharing - My Images</title>
+</head>
+<body>
+    <h1>My Images</h1>
+    
+    {% for image in images %}
+    <div>
+        <h2>{{ image.title }}</h2>
+        <p>{{ image.description }}</p>
+        <img src="{{ image.image_file.url }}" alt="{{ image.title }}">
+    </div>
+    {% endfor %}
+</body>
+</html>
