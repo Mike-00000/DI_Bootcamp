@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Welcome to Torquay Towers Hotel</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices lorem ut tortor mollis, ac sollicitudin velit commodo. Nam tempus turpis in ultricies pretium.</p>
+  <img src="/static/images/hotel.jpg" alt="Hotel Image">
+  <!-- Add more paragraphs and images as needed -->
+
+  <a href="{% url 'visitors:booking' %}">Book a stay</a>
+  <a href="{% url 'visitors:reviews' %}">Read reviews</a>
+{% endblock %}
