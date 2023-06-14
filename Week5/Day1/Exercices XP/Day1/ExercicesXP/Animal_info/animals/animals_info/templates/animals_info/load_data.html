@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    Success load
+    {% block content %}
+        <h1>Success load</h1>
+    {% endblock %}
 </body>
 </html>

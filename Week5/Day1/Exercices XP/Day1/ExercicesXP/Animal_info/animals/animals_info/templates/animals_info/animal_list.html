@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal List</title>
+</head>
+<body>
+    <h1>Animal List</h1>
+    <ul>
+        {% for animal in animals %}
+        <div class="animal">
+            <img src="{{ animal.image.url }}" alt="{{ animal.name }}" class="img-thumbnail">
+            <h2>{{ animal.name }}</h2>
+            <!-- Autres détails de l'animal -->
+        </div>
+        {% endfor %}
+    </ul>
+</body>
+</html>

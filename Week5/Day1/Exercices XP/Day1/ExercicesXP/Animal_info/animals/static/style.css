@@ -1,0 +1,12 @@
+body {
+    background-color: #ad3b3b;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.img-thumbnail {
+    width: 200px;
+    height: 200px;
+}
