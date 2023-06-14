@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Family Details - {{ family.name }}</h1>
+    <h1>{{ family.name }}</h1>
+    <p>Number of animals: {{ num_animals }}</p>
     <ul>
     {% for animal in animals %}
-        <li>
-        <a href="/animal/{{ animal.id }}/">{{ animal }}</a>
-        </li>
-    {% empty %}
-        <li>No animals found in this family.</li>
+        <li>{{ animal.name }}</li>
     {% endfor %}
     </ul>
-
 </body>
 </html>

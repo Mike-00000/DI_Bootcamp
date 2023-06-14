@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Animal Details - {{ animal }}</h1>
+    <h1>{{ animal.name }}</h1>
+    <p>Family: <a href="{% url 'family_detail' animal.family.id %}">{{ animal.family.name }}</a></p>
+    <img src="{{ animal.image.url }}" alt="{{ animal.name }} Image">
     <p>Legs: {{ animal.legs }}</p>
     <p>Weight: {{ animal.weight }}</p>
     <p>Height: {{ animal.height }}</p>
     <p>Speed: {{ animal.speed }}</p>
-    <p>Family: {{ animal.family }}</p>
-
+    <img src="{{ animal.image.url }}" alt="Animal Image">
 </body>
 </html>

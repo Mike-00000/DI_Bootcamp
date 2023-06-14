@@ -11,7 +11,7 @@
     <ul>
     {% for animal in animals %}
         <li>
-        <a href="/animal/{{ animal.id }}/">{{ animal }}</a>
+            <li>{{ animal.name }} - {{ animal.family.name }}</li>
         </li>
     {% empty %}
         <li>No animals found.</li>
