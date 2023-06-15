@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIF Website - Homepage</title>
+</head>
+<body>
+    <h1>GIF Website - Homepage</h1>
+    
+    <nav>
+        <a href="{% url 'new_gif' %}">Add new GIF</a>
+        <a href="{% url 'new_category' %}">Add new Category</a>
+    </nav>
+    
+    <h2>All GIFs</h2>
+    {% for gif in gifs %}
+        <img src="{{ gif.url }}" alt="{{ gif.title }}">
+        <p>Likes: {{ gif.likes }}</p>
+
+        <form action="{% url 'increment-like' gif.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" style="background-color: green;">Increment Likes</button>
+        </form>
+
+        <form action="{% url 'decrement-like' gif.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" style="background-color: red;">Decrement Likes</button>
+        </form>
+    {% endfor %}
+</body>
+</html>

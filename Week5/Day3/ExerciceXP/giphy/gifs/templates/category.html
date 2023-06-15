@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIF Website - Category</title>
+</head>
+<body>
+    <h1>GIF Website - Category: {{ category.name }}</h1>
+    
+    {% for gif in gifs %}
+        <img src="{{ gif.url }}" alt="{{ gif.title }}">
+    {% endfor %}
+</body>
+</html>

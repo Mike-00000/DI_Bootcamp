@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIF Website - Categories</title>
+</head>
+<body>
+    <h1>GIF Website - Categories</h1>
+    
+    <ul>
+        {% for category in categories %}
+            <li><a href="{% url 'category' category.id %}">{{ category.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

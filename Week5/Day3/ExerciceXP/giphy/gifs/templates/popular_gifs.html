@@ -1,0 +1,6 @@
+<h1>Popular GIFs</h1>
+<ul>
+  {% for gif in popular_gifs %}
+    <li>{{ gif.title }} - Likes: {{ gif.likes }}</li>
+  {% endfor %}
+</ul>
