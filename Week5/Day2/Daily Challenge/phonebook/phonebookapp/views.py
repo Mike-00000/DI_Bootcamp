@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import Person, PersonSearchForm
+from .models import Person
+from .forms import PersonSearchForm
 
-def search_by_phonenumber(request):
+def search_by_phonenumber(request, phonenumber):
     if request.method == 'GET':
         phonenumber = request.GET.get('phonenumber', '')
         try:
@@ -15,9 +16,7 @@ def search_by_phonenumber(request):
     return HttpResponse("Invalid request method")
 
 
-def search_by_name(request):
-    if request.method == 'GET':
-        name = request.GET.get('name', '')
+def search_by_name(request, name):
         try:
             person = Person.objects.get(name__iexact=name)
             context = {'person': person}
@@ -25,7 +24,8 @@ def search_by_name(request):
         except Person.DoesNotExist:
             message = f"No person found with name: {name}"
             return render(request, 'person_name.html', {'message': message})
-    return HttpResponse("Invalid request method")
+        
+
 
 
 def search_person(request):

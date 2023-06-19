@@ -1,24 +1,23 @@
 from django.contrib import admin
+from django.db import models
 from django import forms
-from phonenumber_field.formfields import PhoneNumberField
-from phonenumber_field.widgets import PhoneNumberInternationalFallbackWidget
-from .models import Person, Post, Category, Email, Address, PersonAdmin
+from phonenumber_field.modelfields import PhoneNumberField
+from phonenumber_field.widgets import PhoneNumberInternationalFallbackWidget, RegionalPhoneNumberWidget
+from .models import Person, Post, Category, Email, Address
+from .forms import PersonForm
+
 # Register your models here.
-
-
-class PersonForm(forms.ModelForm):
-    phone_number = PhoneNumberField(widget=PhoneNumberInternationalFallbackWidget)
-
-    class Meta:
-        model = Person
-        fields = '__all__'
 
 class PersonAdmin(admin.ModelAdmin):
     form = PersonForm
-    list_display = ('name', 'email', 'address')
+    list_display = ('name', 'email', 'phone_number', 'address')
     list_display_links = ('name', 'email', 'address')
-    search_fields = ('name', 'email', 'phone_number')
+    search_fields = ('name', 'email', 'phone_number', 'address')
     exclude = ('id',)
+
+    formfield_overrides = {
+        PhoneNumberField: {'widget': PhoneNumberInternationalFallbackWidget},
+    }
 
 admin.site.register(Person, PersonAdmin)
 admin.site.register(Post)

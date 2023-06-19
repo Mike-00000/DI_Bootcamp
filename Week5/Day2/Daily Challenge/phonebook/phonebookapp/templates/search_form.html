@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search Form</title>
 </head>
 <body>
-    <h1>Search Form</h1>
+    <h1>Search Person</h1>
     <form action="/persons/phonenumber" method="get">   
-    <input type="text" name
+        {% csrf_token %}
+        <input type="text" name="phonenumber" placeholder="Enter phone number">
+        <button type="submit">Search by Phone Number</button>
+    </form>
 
+    <br>
+
+    <form action="/persons/name" method="get">   
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Enter name">
+        <button type="submit">Search by Name</button>
+    </form>
 </body>
 </html>
