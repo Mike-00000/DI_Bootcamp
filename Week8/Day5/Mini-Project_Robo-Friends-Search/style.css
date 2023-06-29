@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+#robots {
+  border: 5px solid rgb(233, 182, 73);
+  background-color: rgb(134, 60, 30);
+  border-radius: 30px;
+  /* margin: 10px; */
+  padding-top: 40px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.robot-card {
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(233, 182, 73);
+  border-radius: 30px;
+  margin: 10px;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.robotimage {
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(circuit-pattern.png);
+    width: 170px;
+    height: 170px;
+
+}
+
+#testdiv {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px 70px;
+    background-image: url(circuit-pattern.png);
+}
