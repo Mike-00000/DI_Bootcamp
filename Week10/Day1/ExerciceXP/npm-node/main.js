@@ -19,11 +19,19 @@
 
 // ________________________________________________________
 // Exercise 3 : Nodemon
-const a = 5;
-const b = 10;
-let x;
-const c = 6;
-x = a + b;
-const sum = x + c
-console.log(sum);
+// const a = 5;
+// const b = 10;
+// let x;
+// const c = 6;
+// x = a + b;
+// const sum = x + c
+// console.log(sum);
 
+
+
+
+// Daily Challenge : Modules
+// ________________________________________________________
+const largeNumber = 356;
+
+module.exports = {largeNumber}
