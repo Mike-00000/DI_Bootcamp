@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="home" href="#home">Back to Home</a>
+      <a class="center" href="#green-converter">Green Converter</a>
+      <a class="right" href="another-page.html">Funny Converter</a>
+    </div>
+
+    <div class="bodies">
+      <div class="bodyleft">
+        <div class="weatherinfo">
+            <h4>Weather</h4>
+            <button id="weather-button">Display weather</button>
+            <div id="weather-info"></div>
+        </div>
+        <div class="weatherhistory">
+            <div id="weather-history">History</div>
+            <button id="reset-weather-button" class="reset-button">Reset</button>
+        </div>
+        <div class="info-left"></div>
+      </div>
+      <div class="bodycenter">
+        <div class="ecoconvertor">
+
+            <h1>Eco Converter</h1>
+            <form id="conversion-form">
+            <label for="sub-topic">Choose a sub-topic:</label>
+            <select id="sub-topic" name="sub-topic">
+                <option value="bath">Bathwater</option>
+                <option value="brushing">Water wasted while brushing teet
+                  h</option>
+            </select><br>
+
+            <label for="conversion-object">Choose the conversion object:</label>
+            <select id="conversion-object" name="conversion-object">
+                <option value="coffee-cup">Coffee cup</option>
+                <option value="water-bottle">Watter bottle</option>
+                <option value="wine-glass">Wine glass</option>
+                <option value="coke-can">Can of Coke</option>
+                <option value="vodka-shot">Shot of vodka</option>
+            </select><br>
+
+            <button type="submit">Convert</button>
+            </form>
+
+            <div id="result-container"></div>
+        </div>
+        <div class="localstorageconvertor">
+            <div id="conversion-summary">
+            <p></p>
+            <table id="conversion-table">
+                <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Conversion</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            </div>
+            <button id="reset-button" class="reset-button">Reset</button>
+        </div>
+      </div>
+      <div class="bodyright">
+        <h3></h3>
+        <div class="info-left"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

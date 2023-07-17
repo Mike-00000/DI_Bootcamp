@@ -1,0 +1,227 @@
+
+
+body {
+    background-color: #000000;
+}
+
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.navbar a {
+    border: 2px solid rgb(98, 170, 109);
+    border-radius: 15px;
+    float: left;
+    display: block;
+    color: rgb(98, 170, 109);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    /* background-color: #a3da95; */
+    color: black;
+    border: 3px solid rgb(98, 170, 109);
+    border-radius: 40px;
+}
+
+.navbar .home {
+    margin-left: 20px; 
+    width: 170px; 
+}
+
+.navbar .center {
+    display: block;
+    width: 250px; 
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .right {
+    float: right;
+    margin-right: 20px;
+    width: 170px;   
+}
+
+.bodies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyleft {
+    width: 20%;
+    height: 800px;
+    background-color: rgb(51, 77, 51);
+    color: white;
+    background-image: url('eau2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* h1 {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(98, 170, 109, 0.4);
+    margin-bottom: 20px;
+}
+
+#conversion-form {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(98, 170, 109, 0.4);
+    margin-bottom: 20px;
+} */
+
+.ecoconvertor {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 80%; 
+    border: 5px black solid;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 30px; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+    /* border: 2px solid rgb(98, 170, 109);
+    width: 50%;
+    justify-content: center; */
+    padding-bottom: 15px;
+} 
+
+#sub-topic {
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+#conversion-object {
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+.localstorageconvertor {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 80%; 
+    border: 5px black solid;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 30px; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#conversion-table {
+    margin: 0 auto;
+}
+
+.weatherinfo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+    border: 2px black solid;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.weatherhistory {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+    border: 2px black solid;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.bodycenter {
+    color: rgb(0, 0, 0);
+    width: 55%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-image: url('eau27.jpg');
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+}
+
+.bodyright {
+    width: 20%;
+    height: 800px;
+    background-color: rgb(51, 77, 51);
+    color: white;
+    background-image: url('eau2.jpeg');
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+}
+
+#conversion-table {
+    border-collapse: collapse;
+    margin-bottom: 5px;
+}
+  
+#conversion-table th,
+#conversion-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    color: #000000;
+}
+
+#conversion-table th {
+    background-color: #f2f2f2;
+  }
+  
+/* Style du bouton Convert */
+#conversion-form button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  /* Style du bouton Reset */
+  #reset-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  #reset-weather-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+#weather-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
