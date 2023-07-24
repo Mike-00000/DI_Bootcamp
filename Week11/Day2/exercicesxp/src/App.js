@@ -4,9 +4,12 @@ import React from "react";
 import Car from "./Components/Car";
 import Events from "./Events";
 import Phone from "./Phone";
+import Color from "./Colors";
 
 
 const carinfo = { name: "Ford", model: "Mustang" };
+
+
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
 
       <h2>Exercice 3: Phone</h2>
       <Phone />
+
+      <h2>Exercise 4: UseEffect Hook</h2>
+      <Color />
     </>
   );
 };
