@@ -1,0 +1,31 @@
+
+.navbar {
+  background-color: rgb(85, 40, 40);
+  color: white;
+  padding: 10px;
+}
+
+.form-container {
+  background-color: rgb(214, 175, 182);
+  padding: 20px;
+}
+
+.displayed-info {
+  background-color: rgb(92, 92, 156);
+  color: white;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+
+  .label-bold {
+    font-weight: bold;
+  }
+
+  
