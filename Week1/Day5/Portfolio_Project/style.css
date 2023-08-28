@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+.navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logoname {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+#face {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+    
+}
+
+.name {
+    margin-top: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.links {
+    justify-content: center;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+.container {
+    margin-top: 80px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+.first_part_me {
+    /* border: 2px solid rgb(255, 0, 0); */
+    background-color: rgb(255, 244, 148);
+    background-image: url('fond4.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos {
+    /* border: 2px solid rgb(197, 207, 252); */
+    border-radius: 10px;
+    background-color: white;
+    width: 50px;
+    height: 300px;
+    align-self: center;
+    display: flex;         /* Active le Flexbox */
+    justify-content: center; /* Centre les éléments horizontalement */
+    flex-wrap: wrap;        
+}
+
+.logos a i {
+    font-size: 30px; 
+    margin: 10px 0;  
+    color: #9eb5ca;
+}
+
+.buttonToProjects {
+    background-color: #9eb5ca;
+    color: white;
+    border-radius: 10px;
+    font-weight:bold;
+    width: 200px;
+    height:50px;
+    /* text-align: center; */
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: background-color 0.3s;
+}
+
+.buttonToProjects:hover {
+    background-color: white;
+    color: #9eb5ca;
+}
+
+a.anav {
+    background-color: #9eb5ca;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;  
+    border-radius: 10px; 
+    margin: 5px;  
+    display: inline-block;  
+    font-size: 0.9em; 
+    transition: background-color 0.3s; 
+}
+
+a.anav:hover {
+    background-color: white;
+    color: #9eb5ca;
+}
+
+a.button{
+    display:block;
+    color:#000000;
+    font-weight:bold;
+    height:30px;
+    text-align: center;
+    text-decoration:none;
+    padding: 10px 30px 25px 30px;
+}
+
+a:hover.button{
+    color:#0066CC;
+    background-color: #c6ee86;
+}
+
+
+.intro {
+    /* border: 2px solid rgb(0, 47, 255); */
+    width: 95%;
+    height: 500px;
+    display: flex; /* afficher les éléments dans une ligne flex */
+    flex-direction: column;
+    justify-content: center; /* centrer horizontalement les éléments */
+    align-items: center; /* centrer verticalement les éléments */
+    padding-top: 180px;
+    background-size: cover;  /* couvre toute la zone de l'élément */
+    background-position: center;  /* centre l'image */
+    background-repeat: no-repeat;  /* empêche la répétition de l'image */
+}
+
+/* .outro {
+    border: 2px solid rgb(0, 47, 255);
+    width: 300px;
+} */
+
+.title {
+    /* border: 2px solid rgb(0, 255, 85); */
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: 900;
+    /* font-weight: bolder; */
+    justify-content: center;
+    margin: 0px 10px;
+    padding: 20px;
+}
+
+.semititle {
+    /* border: 2px solid rgb(0, 255, 85); */
+    font-size: 1.3rem;
+    justify-self: center;
+    text-align: center;
+    margin: 0px 10px 40px 10px;
+    padding: 20px;
+}
+
+.button {
+    /* border: 2px solid rgb(0, 255, 85); */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.mouse {
+    width: 25px;
+    height: 40px;
+    margin-top: 100px;
+    border: 2px solid #333;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+    /* animation: wheel 1.3s infinite; */
+}
+
+@keyframes wheel {
+    0%, 100% {
+        top: 7px;
+        opacity: 1;
+    }
+    50% {
+        top: 15px;  /* ajustez cette valeur pour définir la distance que le point devrait parcourir vers le bas */
+        opacity: 0.5;
+    }
+}
+
+
+
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+.part2 {
+    height: 100vh;
+    background-color: #9eb5ca;
+    display: flex;
+    flex-direction: column;
+}
+.second_part_about_me {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: #9eb5ca;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutme {
+    border: 2px solid rgb(0, 47, 255);
+    background-color: #9eb5ca;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#about_me_header {
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.trait {
+    border: 2px solid rgb(0, 255, 85);
+    border-top: 1px solid #000;
+    width : 40px;
+}
+
+p {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.get_to_know_me {
+    border: 2px solid rgb(0, 47, 255);
+    width: 30%;
+    padding: 20px;
+    margin-left: 200px;
+
+}
+
+h3 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+p {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.myskills {
+    border: 2px solid rgb(0, 47, 255);
+    width: 31%;
+    padding: 20px;
+    margin-right: 200px;
+}
+
+h3 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.skills {
+    border: 2px solid rgb(0, 255, 85);
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    
+}
+
+.skill {
+    padding: 7px 20px; 
+    border-radius: 10px; 
+    margin: 7px;    
+    height: 30px;   
+    display: flex; 
+    align-items: center; 
+    background-color: #f5f5f5; 
+    font-size: 0.9em;             /* Réduisez un peu la taille de la police si nécessaire */
+    transition: background-color 0.3s; 
+}
+
+.skill:hover {
+    background-color: white;   /* Change la couleur de fond lors du survol d'une compétence */
+}
+
+
+.third_part_projects {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 244, 148);
+    display: flex;
+}
+
+.projectstitle {
+    border: 2px solid rgb(0, 47, 255);
+}
+
+h2 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+#trait {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+p {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.portfolio {
+    border: 2px solid rgb(0, 47, 255);
+}
+
+.project1 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.pic1 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.nameproject1 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.project2 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.pic2 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.nameproject2 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.project3 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.pic3 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.nameproject3 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.project4 {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+.pic4 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+.nameproject4 {
+    border: 2px solid rgb(255, 0, 106);
+}
+
+
+
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+.forth_part_contact {
+    border: 2px solid rgb(255, 0, 0);
+    /* background-color: rgb(158, 146, 161); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 40px 0;
+    background-color: #d9d9fc; /* une couleur de fond douce */
+}
+
+.contactform {
+    border: 2px solid rgb(0, 47, 255);
+    width: 40%; /* une largeur maximale pour le texte et le trait */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactform h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contactform p {
+    margin-bottom: 20px;
+    color: #666;
+    
+}
+
+.form {
+    border: 2px solid rgb(0, 47, 255);
+    border-radius: 10px;
+    width: 50%;
+    /* padding-left: 50px; */
+    /* max-width: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px 0px;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.inputname, .inputmail, .inputmessage {
+    width: 80%; /* Utilise toute la largeur disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* arrondit les coins */
+    outline: none; /* supprime la bordure bleue lors de la mise au point */
+    font-size: 1em;
+    background-color: #e0e0e0;
+}
+
+.inputmessage {
+    resize: vertical; /* permet à l'utilisateur de redimensionner le textarea verticalement */
+    min-height: 100px; /* définir une hauteur minimale pour le textarea */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #c6ee86;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #a9d468; /* une version légèrement plus foncée de #c6ee86 pour le survol */
+}
+/* 
+#name {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+#mail {
+    border: 2px solid rgb(0, 255, 85);
+}
+
+#message {
+    border: 2px solid rgb(0, 255, 85);
+} */
+
+
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+footer {
+    border: 2px solid red;
+    background-color: rgb(255, 244, 148);
+    height: 300px;
+    display: flex;              /* Ajoutez ceci */
+    flex-direction: column;    /* Ajoutez ceci si vous voulez les empiler verticalement */
+    justify-content: center;   /* Pour le centrage horizontal */
+    align-items: center;       /* Pour le centrage vertical */
+
+}
+
+.footup {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    /* Centrage vertical */
+    width: 70%;
+    height: 200px;
+    /* padding: 0 50px 0 50px; */
+}
+
+.footbottom {
+    border: 2px solid red;
+    text-align: center;
+    width: 70%;
+    display: flex;          /* Ajoutez ceci */
+    align-items: center;    /* Centrage vertical */
+    justify-content: center;/* Centrage horizontal, si nécessaire */
+    height: 100px;
+    margin-top: auto;
+}
+
+.footleft {
+    width: 40%;
+}
