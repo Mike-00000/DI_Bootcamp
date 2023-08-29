@@ -10,6 +10,16 @@ body {
 }
 
 /* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
 .navbar {
     display: flex;
     overflow: hidden;
@@ -62,6 +72,17 @@ nav ul li {
 
 
 /* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
+/* FIRST PART --- FIRST PART --- FIRST PART --- FIRST PART --- */
 .first_part_me {
     /* border: 2px solid rgb(255, 0, 0); */
     background-color: rgb(255, 244, 148);
@@ -89,6 +110,12 @@ nav ul li {
     font-size: 30px; 
     margin: 10px 0;  
     color: #9eb5ca;
+    transition: background-color 0.3s;
+}
+
+.logos a i:hover {
+    background-color: #9eb5ca;
+    color: #ffffff;
 }
 
 .buttonToProjects {
@@ -235,25 +262,35 @@ a:hover.button{
 }
 
 
-
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
+/* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
 /* SECOND PART --- SECOND PART --- SECOND PART --- SECOND PART --- */
 .part2 {
-    height: 100vh;
+    height: 112vh;
     background-color: #9eb5ca;
     display: flex;
     flex-direction: column;
 }
 .second_part_about_me {
-    border: 2px solid rgb(255, 0, 0);
+    /* border: 2px solid rgb(255, 0, 0); */
     background-color: #9eb5ca;
     display: flex;
     justify-content: space-around;
 }
 
 .aboutme {
-    border: 2px solid rgb(0, 47, 255);
+    /* border: 2px solid rgb(0, 47, 255); */
     background-color: #9eb5ca;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,54 +298,107 @@ a:hover.button{
     align-items: center;
 }
 
-#about_me_header {
+.aboutme p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    width: 700px;
+    margin-bottom: 150px;
+    /* padding: 0 20px; */
+}
+
+/* #about_me_header {
+    margin-top: 30px;
     margin-bottom: 20px;
+} */
+#about_me_header {
+    margin-top: 110px; 
+    padding-top: 80px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 
 h2 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .trait {
-    border: 2px solid rgb(0, 255, 85);
-    border-top: 1px solid #000;
-    width : 40px;
-}
-
-p {
-    border: 2px solid rgb(0, 255, 85);
+    height: 5px;
+    background-color: lightgrey;
+    width : 50px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Pour s'assurer qu'il est traité comme un bloc */
 }
 
 .get_to_know_me {
-    border: 2px solid rgb(0, 47, 255);
-    width: 30%;
+    /* border: 2px solid rgb(0, 47, 255); */
+    width: 35%;
     padding: 20px;
-    margin-left: 200px;
+    margin-left: 150px;
+}
 
+.get_to_know_me h2 {
+    margin-bottom: 30px;
+}
+
+.get_to_know_me p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+.get_to_know_me div {
+    background-color: #f5f5f5;
+    color: #000000;
+    border-radius: 10px;
+    font-weight:bold;
+    width: 200px;
+    height:50px;
+    /* text-align: center; */
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: background-color 0.3s;
+}
+
+.get_to_know_me div:hover {
+    background-color: #698aa8;
+    color: white;
 }
 
 h3 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
 }
 
 p {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
 }
 
 .myskills {
-    border: 2px solid rgb(0, 47, 255);
-    width: 31%;
+    /* border: 2px solid rgb(0, 47, 255); */
+    width: 35%;
     padding: 20px;
     margin-right: 200px;
 }
 
+.myskills h2 {
+    margin-bottom: 20px;
+}
+
 h3 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
 }
 
 .skills {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
@@ -323,7 +413,10 @@ h3 {
     display: flex; 
     align-items: center; 
     background-color: #f5f5f5; 
-    font-size: 0.9em;             /* Réduisez un peu la taille de la police si nécessaire */
+    color: #666;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
     transition: background-color 0.3s; 
 }
 
@@ -332,86 +425,201 @@ h3 {
 }
 
 
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
+/* THIRD PART --- THIRD PART --- THIRD PART --- THIRD PART --- */
 .third_part_projects {
-    border: 2px solid rgb(255, 0, 0);
+    height: 250vh;
+    /* border: 2px solid rgb(255, 0, 0); */
     background-color: rgb(255, 244, 148);
+    background-image: url('fond7.avif');
     display: flex;
+    flex-direction: column;
+    padding: 100px;
 }
 
 .projectstitle {
-    border: 2px solid rgb(0, 47, 255);
+    /* border: 2px solid rgb(0, 47, 255); */
+    /* background-color: #9eb5ca; */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-h2 {
-    border: 2px solid rgb(0, 255, 85);
+.projectstitle h2 {
+    margin-bottom: 20px;
 }
 
-#trait {
-    border: 2px solid rgb(0, 255, 85);
+.projectstitle p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    width: 700px;
+    /* margin-bottom: 150px; */
 }
 
-p {
-    border: 2px solid rgb(0, 255, 85);
+.third_part_projects div[class^="pic"] img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .portfolio {
-    border: 2px solid rgb(0, 47, 255);
+    /* border: 2px solid rgb(0, 47, 255); */
+    margin: 50px 0;
 }
 
 .project1 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
 }
 
 .pic1 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 45%;
 }
 
 .nameproject1 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement le contenu */
+    gap: 10px;
+}
+
+.nameproject1 h2 {
+    margin-bottom: 30px;
+}
+
+.nameproject1 p {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .project2 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
 }
 
 .pic2 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 45%;
 }
 
 .nameproject2 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement le contenu */
+    gap: 10px;
+}
+
+.nameproject2 h2 {
+    margin-bottom: 30px;
+}
+
+.nameproject2 p {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .project3 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
 }
 
 .pic3 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 45%;
 }
 
 .nameproject3 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement le contenu */
+    gap: 10px;
+}
+
+.nameproject3 h2 {
+    margin-bottom: 30px;
+}
+
+.nameproject3 p {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .project4 {
-    border: 2px solid rgb(0, 255, 85);
+    /* border: 2px solid rgb(0, 255, 85); */
+    display: flex;
+    justify-content: space-around;
 }
 
 .pic4 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 45%;
 }
 
 .nameproject4 {
-    border: 2px solid rgb(255, 0, 106);
+    /* border: 2px solid rgb(255, 0, 106); */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement le contenu */
+    gap: 10px;
+}
+
+.nameproject4 h2 {
+    margin-bottom: 30px;
+}
+
+.nameproject4 p {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 
 
 /* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+/* FORTH PART --- FORTH PART --- FORTH PART --- FORTH PART --- */
+
 .forth_part_contact {
-    border: 2px solid rgb(255, 0, 0);
+    height: 100vh;
+    /* border: 2px solid rgb(255, 0, 0); */
     /* background-color: rgb(158, 146, 161); */
+    /* background-image: url('fondn.avif'); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +629,7 @@ p {
 }
 
 .contactform {
-    border: 2px solid rgb(0, 47, 255);
+    /* border: 2px solid rgb(0, 47, 255); */
     width: 40%; /* une largeur maximale pour le texte et le trait */
     text-align: center;
     margin-bottom: 20px;
@@ -440,7 +648,7 @@ p {
 }
 
 .form {
-    border: 2px solid rgb(0, 47, 255);
+    /* border: 2px solid rgb(0, 47, 255); */
     border-radius: 10px;
     width: 50%;
     /* padding-left: 50px; */
@@ -482,7 +690,7 @@ p {
 
 .submit-button {
     padding: 10px 20px;
-    background-color: #c6ee86;
+    background-color: #9eb5ca;
     border: none;
     border-radius: 10px;
     font-size: 1em;
@@ -491,7 +699,7 @@ p {
 }
 
 .submit-button:hover {
-    background-color: #a9d468; /* une version légèrement plus foncée de #c6ee86 pour le survol */
+    background-color: #ccc; /* une version légèrement plus foncée de #c6ee86 pour le survol */
 }
 /* 
 #name {
@@ -508,9 +716,18 @@ p {
 
 
 /* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- */
 footer {
-    border: 2px solid red;
-    background-color: rgb(255, 244, 148);
+    /* border: 2px solid red; */
+    background-color: #f5f5f5;
+    background-image: url('fondn.avif');
+    color: white;
     height: 300px;
     display: flex;              /* Ajoutez ceci */
     flex-direction: column;    /* Ajoutez ceci si vous voulez les empiler verticalement */
@@ -520,7 +737,7 @@ footer {
 }
 
 .footup {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;    /* Centrage vertical */
@@ -530,7 +747,7 @@ footer {
 }
 
 .footbottom {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     width: 70%;
     display: flex;          /* Ajoutez ceci */
