@@ -1,0 +1,54 @@
+AUDI R8
+Engine type: V10
+Power: 562hp
+0-100 km/h: 3.5s
+Top speed: 331km/h
+
+
+CHEVROLET CAMARO
+Engine type: V8
+Power: 553hp
+0-100 km/h: 4.6s
+Top speed: 290km/h
+
+
+BMW I8 ROADSTER
+Engine type: Hybrid
+Power: 369hp
+0-100 km/h: 4.6s
+Top speed: 250km/h
+
+
+FORD MUSTANG
+Engine type: V8
+Power: 460hp
+0-100 km/h: 3,9s
+Top speed: 250km/h
+
+
+NISSAN GTR NISMO
+Engine type: V6
+Power: 600hp
+0-100 km/h: 2.8s
+Top speed: 315km/h
+
+
+SUBARU BRZ
+Flat-four engine
+Power: 200hp
+0-100 km/h: 7.6s
+Top speed: 230km/h
+
+
+PORSCHE 911 CARRERA S
+Flat-six engine
+Power: 385hp
+0-100 km/h: 4.7s
+Top speed: 302km/h
+
+
+MERCEDES SLS AMG Black Series
+Engine type: V8
+Power: 622hp
+0-100 km/h: 3,6s
+Top speed: 315km/h

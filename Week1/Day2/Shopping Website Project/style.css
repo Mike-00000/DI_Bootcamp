@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+
+.container {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  /* display: inline; */
+  /* background-color: black; */
+  height: 80px;
+  color: white;
+}
+/* nav img {
+  display: inline;
+  position: absolute;
+} */
+
+img {
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.tesssst {
+  width: 100px;
+  height: 10px;
+  background-color: rgb(221, 88, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: myfirst 8s ease-in-out infinite alternate;
+  border-radius: 20px;
+}
+
+@keyframes myfirst {
+  0%   { background-color: rgb(221, 88, 0); transform: translateX(-350%); }
+  20%  { background-color: rgb(212, 212, 212); transform: translateX(350%); }
+  40%  { background-color: rgb(221, 88, 0); transform: translateX(-350%); }
+  60%  { background-color: rgb(0, 0, 0); transform: translateX(350%); }
+  80% { background-color: rgb(214, 214, 214); transform: translateX(-350%); }
+  100%  { background-color: rgb(221, 88, 0); transform: translateX(350%); }
+}
+
+nav ul li a {
+  float: right;
+  display: inline;
+  margin-right: 50px;
+  margin-top: -50px;
+  font-size: small;
+  font-weight: bold;
+  color: rgb(221, 88, 0);
+}
+
+nav > * {
+  display: inline-block;
+  border: 2px solid black;
+  background-color: rgb(230, 230, 230);
+}
+
+/* MAIN --- MAIN */
+.bg {
+  background-image: url(bg-light-road-street-car-night-wet-1175701-pxhere.com.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 85vh;
+  }
+
+
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(221, 88, 0)  ;
+ }
+
+p {
+    display: inline;
+}
+
+.left {
+    float: left;
+    margin-left: 50px;
+}
+
+.right {
+    float: right;
+    margin-right: 50px;
+}
+
+footer > * {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: rgb(230, 230, 230);
+  }

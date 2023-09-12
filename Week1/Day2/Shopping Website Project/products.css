@@ -1,0 +1,611 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  .bg {
+    background-image: url(bg-deep-blue-plain-concrete-textured-background.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    }
+}
+
+/* NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR --- NAVBAR */
+.container {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+  /* display: inline; */
+  /* background-color: black; */
+  height: 80px;
+  color: white;
+}
+
+.imgnav {
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+nav ul li a {
+  float: right;
+  display: inline;
+  margin-right: 50px;
+  margin-top: -50px;
+  font-size: small;
+  font-weight: bold;
+  color: rgb(221, 88, 0);
+}
+
+nav > * {
+  display: inline-block;
+  border: 2px solid black;
+  background-color: rgb(230, 230, 230);
+}
+
+/* MAIN CONTENT --- MAIN CONTENT --- MAIN CONTENT --- MAIN CONTENT */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  background: linear-gradient(
+    to left,
+    rgb(240, 56, 0),
+    rgb(185, 185, 185),
+    white,
+    rgb(185, 185, 185),
+    rgb(240, 56, 0)
+  );
+}
+h1:before,
+h1:after {
+  color: white;
+  content: "";
+  flex: 1;
+  border-bottom: groove 2px;
+  margin: auto 0.25em;
+  box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
+}
+
+.forthecars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid rgb(240, 56, 0); */
+  width: 90vw;
+  height: 3400px;
+  padding: 5px;
+}
+
+.cars {
+  position: relative;
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 20px 5px 40px 5px;
+  width: 80vw;
+  height: 40vh;
+  padding: 5px;
+  background-color: rgb(230, 230, 230);
+}
+
+h3 {
+  display: flex;
+  background: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgb(185, 185, 185),
+    rgb(240, 56, 0),
+    rgb(185, 185, 185),
+    rgb(255, 255, 255)
+  );
+}
+
+div.cars::before,
+div.cars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px; /* Largeur de la barre verticale */
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(185, 185, 185),
+    rgb(240, 56, 0)
+  );
+}
+
+.cars:hover {
+  position: relative;
+}
+
+div.cars:hover::before {
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 56, 0),
+    rgb(185, 185, 185),
+    rgb(240, 56, 0)
+  );;
+}
+
+/* Barre verticale de droite au survol */
+div.cars:hover::after {
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 56, 0),
+    rgb(185, 185, 185),
+    rgb(240, 56, 0)
+  );;
+}
+
+div.cars:hover h3 {
+  border-radius: 10px;
+  background: linear-gradient(
+    to left,
+    rgb(240, 56, 0),
+    rgb(185, 185, 185),
+    rgb(240, 56, 0),
+    rgb(185, 185, 185),
+    rgb(240, 56, 0)
+  );
+}
+
+.cars::before {
+  left: -5px; /* Position de la barre verticale à gauche */
+}
+
+.cars::after {
+  right: -5px; /* Position de la barre verticale à droite */
+}
+
+h3:before,
+h3:after {
+  color: white;
+  content: "";
+  flex: 1;
+  border-bottom: groove 2px;
+  margin: auto 0.25em;
+  box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
+}
+
+.audi {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_audi {
+  /* border: 2px solid rgb(240, 56, 0); */
+  /* margin: 5px; */
+  height: 95%;
+  width: 53%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_audi {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_audi {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 16%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.chevrolet {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_chevrolet {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_chevrolet {
+  /* border: 2px solid rgb(240, 56, 0)red; */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_chevrolet {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 16%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.bmw {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_bmw {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_bmw {
+  /* border: 2px solid rgb(240, 56, 0); */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_bmw {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 16%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.ford {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_ford {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_ford {
+  /* border: 2px solid rgb(240, 56, 0); */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_ford {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 15%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.nissan {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_nissan {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_nissan {
+  /* border: 2px solid rgb(240, 56, 0); */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_nissan {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 15%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.subaru {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_subaru {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_subaru {
+  /* border: 2px solid rgb(240, 56, 0); */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_subaru {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 15%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.porsche {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_porsche {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_porsche {
+  /* border: 2px solid rgb(240, 56, 0); */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_porsche {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: 6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 16%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+.mercedes {
+  /* border: 2px solid rgb(240, 56, 0); */
+  margin: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.car_mercedes {
+  /* border: 2px solid rgb(240, 56, 0); */
+  height: 95%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car_mercedes > img {
+  margin-top: 30px; /* Ajustez la valeur selon vos besoins */
+}
+
+.logo_mercedes {
+  /* border: 2px solid rgb(240, 56, 0); */
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  height: 55%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spec_mercedes {
+  border-right: 3px solid rgb(55, 34, 97);
+  border-left: 3px solid rgb(55, 34, 97);
+  border-radius: 15px;
+  box-shadow: -6px 6px 3px rgba(59, 59, 59, 0.5);
+  background-color: rgb(203, 203, 209);
+  width: 15%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --------------------------------------- */
+
+/* FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 23px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(221, 88, 0);
+}
+
+p {
+  display: inline;
+}
+
+.left {
+  float: left;
+  margin-left: 50px;
+}
+
+.right {
+  float: right;
+  margin-right: 50px;
+}
+
+footer > * {
+  display: inline-block;
+  border: 2px solid black;
+  background-color: rgb(230, 230, 230);
+}
